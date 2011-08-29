@@ -676,7 +676,7 @@ function groupTicks1(d) {
 	barres.selectAll("rect")
 		.data(data_bars.sort(function(a,b) {return b.value - a.value;}))
 	.enter().append("svg:rect")
-		.attr("y", function(d, i) {return 10 + i*21;}) // ajouter un offset générique pour la distance top début des barres
+		.attr("y", function(d, i) {return 10 + i*21;}) // ajouter un offset gï¿½nï¿½rique pour la distance top dï¿½but des barres
 		.attr("x", translate_barres)
 		.attr("width", function(d) {return width_bars(d.value);})
 		.attr("height", 19)
@@ -753,4 +753,4 @@ function groupTicks1(d) {
 			.attr("dy", "1.2em")
 			.attr("class", "barres")
 			//.attr("text-anchor", "end")
-			.text(function(d) {return mille(format(d.value))+'e';});
+			.text(function(d) {return mille(format(d.value))+'\u20AC';});
