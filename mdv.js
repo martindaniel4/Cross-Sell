@@ -753,4 +753,4 @@ function groupTicks1(d) {
 			.attr("dy", "1.2em")
 			.attr("class", "barres")
 			//.attr("text-anchor", "end")
-			.text(function(d) {return mille(format(d.value))+'\u20AC';});
+			.text(function(d) {return mille(format(d.value))+' '+'\u20AC';});
