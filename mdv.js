@@ -1,5 +1,5 @@
 
-		//a
+		//b
 	var cat_selection = "Jeux_Video";
 		
 	var data_nest = d3.nest().key(function(d) {return d.category;}).map(data_total.sort(function(a,b) {return a.revenue1 - b.revenue1;})),
